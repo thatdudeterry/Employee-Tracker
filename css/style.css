@@ -1,0 +1,137 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #949191;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: #2980b9;
+    color: whitesmoke;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+header {
+    font-size: 1.875rem; 
+}
+
+footer {
+    font-size: 0.9375rem;
+    margin-top: auto;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Container Layout */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem;
+    flex-grow: 1;
+    gap: 2rem; 
+}
+
+/* Main Menu and Employee Form */
+.main-menu {
+    height: fit-content;
+    width: 30%; 
+    padding: 1.25rem; 
+    background-color: #fff;
+    border: 2px solid #2980b9;
+    border-radius: 0.5rem; 
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+}
+
+.main-menu form {
+    margin-bottom: 1.25rem;
+}
+
+.main-menu form input,
+.main-menu form button {
+    display: block;
+    width: calc(100% - 2.5rem); 
+    margin-bottom: 0.625rem; 
+    padding: 1rem; 
+    font-size: 1rem;
+    border: 2px solid #2980b9;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+}
+
+.main-menu form input {
+    width: calc(65% - 0.625rem);
+}
+
+.main-menu form button {
+    width: calc(35% - 0.625rem);
+}
+
+.main-menu button {
+    background-color: rgb(83, 85, 86);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+.main-menu button:hover {
+    background-color: #2980b9;
+}
+
+/* Employee List */
+.employee-list {
+    flex: 1;
+    height: fit-content;
+    padding: 1.25rem; 
+    background-color: #fff; 
+    border: 2px solid #2980b9;
+    border-radius: 0.5rem; 
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+    overflow-y: auto; 
+}
+
+.employee-list table {
+    width: 100%;
+    background-color: #fff;
+    padding: 2rem;
+    border-collapse: collapse;
+}
+
+.employee-list th,
+.employee-list td {
+    padding: 0.625rem; 
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.employee-list th {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.employee-list td {
+    background-color: #f9f9f9;
+}
+
+.employee-list button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 0.3125rem 0.625rem; 
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.employee-list button:hover {
+    background-color: #c0392b;
+}
